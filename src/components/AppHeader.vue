@@ -1,23 +1,39 @@
-<!-- When we set the background colour in AppHeader.vue
- it only affects the area around the component, not the whole page.
- Vue actively keeps component's styles separate so they don't 
- affect other parts of the app. -->
-
 <template>
-    <body>
-        <h1>Hello world</h1>
-    </body>
-</template>
-
-<script setup>
-</script>
-
+    <header>
+      <h1>TASK MASTER</h1>
+      <h2>COMP206 - Assignment 2</h2>
+    </header>
+  </template>
+  
+  <script>
+  export default {
+    name: 'AppHeader'
+  };
+  </script>
+  
 <style scoped>
-    body {
-        background-color: pink;
-    }
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ff9f1c; 
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #ffbf69; 
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 
-    h1 {
-        color:aqua;
-    }
+h1 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 5px 0 0 0;
+  font-weight: normal;
+}
 </style>
+  
